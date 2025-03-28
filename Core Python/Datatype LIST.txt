@@ -1,0 +1,221 @@
+Last login: Wed Feb 19 10:16:19 on ttys000
+darshanpatel@DARSHANs-MacBook-Air ~ % python3
+Python 3.13.1 (v3.13.1:06714517797, Dec  3 2024, 14:00:22) [Clang 15.0.0 (clang-1500.3.9.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("hello, world!")
+hello, world!
+>>> 
+>>> 
+>>> 
+>>> a = [1, 2, 3, 5, 'Darshan', 'vidhi']
+>>> a
+[1, 2, 3, 5, 'Darshan', 'vidhi']
+>>> 
+>>> 
+>>> 
+>>> a[0]
+1
+>>> 
+>>> a[-1]
+'vidhi'
+>>> 
+>>> 
+>>> a[-2]
+'Darshan'
+>>> 
+>>> 
+>>> type(a)
+<class 'list'>
+>>> 
+>>> dir(a)
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> 
+>>> 
+>>> a.append(20)
+>>> 
+>>> 
+>>> a
+[1, 2, 3, 5, 'Darshan', 'vidhi', 20]
+>>> 
+>>> 
+>>> a.clear()
+>>> a
+[]
+>>> a = [1, 2, 3, 5, 'Darshan', 'vidhi']
+>>> 
+>>> 
+>>> a.copy(b)
+Traceback (most recent call last):
+  File "<python-input-33>", line 1, in <module>
+    a.copy(b)
+           ^
+NameError: name 'b' is not defined
+>>> 
+>>> b = []
+>>> 
+>>> b
+[]
+>>> type(b)
+<class 'list'>
+>>> 
+>>> 
+>>> 
+>>> b
+[]
+>>> dir(a)
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> 
+>>> a
+[1, 2, 3, 5, 'Darshan', 'vidhi']
+>>> 
+>>> b
+[]
+>>> 
+>>> a.copy(b)
+Traceback (most recent call last):
+  File "<python-input-49>", line 1, in <module>
+    a.copy(b)
+    ~~~~~~^^^
+TypeError: list.copy() takes no arguments (1 given)
+>>> a.copy = b
+Traceback (most recent call last):
+  File "<python-input-50>", line 1, in <module>
+    a.copy = b
+    ^^^^^^
+AttributeError: 'list' object attribute 'copy' is read-only
+>>> 
+>>> 
+>>> b = a.copy()
+>>> 
+>>> b
+[1, 2, 3, 5, 'Darshan', 'vidhi']
+>>> 
+>>> a
+[1, 2, 3, 5, 'Darshan', 'vidhi']
+>>> 
+>>> a.count()
+Traceback (most recent call last):
+  File "<python-input-59>", line 1, in <module>
+    a.count()
+    ~~~~~~~^^
+TypeError: list.count() takes exactly one argument (0 given)
+>>> count(a)
+Traceback (most recent call last):
+  File "<python-input-60>", line 1, in <module>
+    count(a)
+    ^^^^^
+NameError: name 'count' is not defined. Did you mean: 'round'?
+>>> 
+>>> 
+>>> 
+>>> count()
+Traceback (most recent call last):
+  File "<python-input-64>", line 1, in <module>
+    count()
+    ^^^^^
+NameError: name 'count' is not defined. Did you mean: 'round'?
+>>> 
+>>> help(count)
+Traceback (most recent call last):
+  File "<python-input-66>", line 1, in <module>
+    help(count)
+         ^^^^^
+NameError: name 'count' is not defined. Did you mean: 'round'?
+>>> help(count())
+Traceback (most recent call last):
+  File "<python-input-67>", line 1, in <module>
+    help(count())
+         ^^^^^
+NameError: name 'count' is not defined. Did you mean: 'round'?
+>>> 
+>>> 
+>>> 
+>>> help(a)
+
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> help(a)
+
+>>> a
+[1, 2, 3, 5, 'Darshan', 'vidhi']
+>>> 
+>>> a.count(5)
+1
+>>> 
+>>> dir(a)
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> 
+>>> a.insert(22)
+Traceback (most recent call last):
+  File "<python-input-84>", line 1, in <module>
+    a.insert(22)
+    ~~~~~~~~^^^^
+TypeError: insert expected 2 arguments, got 1
+>>> 
+>>> a.insert(0, 22)
+>>> 
+>>> 
+>>> a
+[22, 1, 2, 3, 5, 'Darshan', 'vidhi']
+>>> 
+>>> a.pop()
+'vidhi'
+>>> 
+>>> a.pop()
+'Darshan'
+>>> 
+>>> 
+>>> a
+[22, 1, 2, 3, 5]
+>>> 
+>>> a.remove(0)
+Traceback (most recent call last):
+  File "<python-input-98>", line 1, in <module>
+    a.remove(0)
+    ~~~~~~~~^^^
+ValueError: list.remove(x): x not in list
+>>> 
+>>> 
+>>> a.remove(2)
+>>> 
+>>> 1
+1
+>>> 
+>>> 
+>>> a
+[22, 1, 3, 5]
+>>> 
+>>> a.remove(22)
+>>> 
+>>> a
+[1, 3, 5]
+>>> 
+>>> 
+>>> dir(a)
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> 
+>>> 
+>>> 
+>>> 
+>>> a
+[1, 3, 5]
+>>> 
+>>> a.reverse()
+>>> 
+>>> 
+>>> a
+[5, 3, 1]
+>>> 
+>>> 
+>>> a.sort()
+>>> 
+>>> 
+>>> a
+[1, 3, 5]
+>>> 
+>>> 
+>>> 
+>>> 
